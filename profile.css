@@ -50,7 +50,7 @@ ul>li> a:hover{
 
 section.intro{
     width: 100%;
-    background: url("../myPortfolio/img/pngtree-computer.jpg");
+    background: url("../img/pngtree-computer.jpg");
     background-size: cover;
     min-height: 400px;
     margin-top: 40px;
