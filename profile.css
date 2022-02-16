@@ -1,0 +1,262 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    -youbkit-touch-callout: none; /* iOS Safari */
+    -youbkit-user-select: none;   /* Chrome 6.0+, Safari 3.1+, Edge & Opera 15+ */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;        /* IE 10+ and Edge */
+    user-select: none;            /* Non-prefixed version,
+                                currently supported by Chrome and Opera */
+}
+
+.pageContainer{
+    background-color: #f9fafb;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.navbar{
+    background-color: #75dbc7;
+    width: 99%;
+    position: fixed;
+    top:0
+}
+
+ul.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ul>li{
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+ul>li> a:hover{
+    border-bottom:1px solid #ffffff 
+}
+
+section.intro{
+    width: 100%;
+    background: url("../myPortfolio/img/pngtree-computer.jpg");
+    background-size: cover;
+    min-height: 400px;
+    margin-top: 40px;
+}
+
+.introCenter h1{
+    font-size: 65px;
+    color: #ffffff;
+    margin-top: 10%;
+}
+.introDiv{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section> div.aboutRow{
+    display: flex;
+    flex-direction: row;
+    margin-top:2%;
+}
+
+.leftAboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%
+}
+
+section.aboutMe img{
+    width: 25%;
+    border-radius: 25% ;
+}
+
+.rightAboutMe{
+    padding-right: 4%;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.links{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.skillSet{
+    background-color: #f6f3f3;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.skillSetRow{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    margin-left: 4%;
+}
+
+.frontEnd{
+    width: 33%;
+}
+
+.toolsUsed{
+    width: 33%;
+}
+
+.exp{
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.expRow{
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+    margin-left: 4%;
+}
+
+.nokia{
+    width: 33%;
+}
+
+
+.companyName{
+    margin-bottom: 0;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+}
+
+.role{
+    margin-top: 20px;
+}
+
+.roleName{
+    margin-top: 0;
+}
+
+.acc{
+    width: 33%;
+}
+
+.projects{
+    background-color: #f6f3f3;
+    width: 100%;
+    padding-bottom: 1%;
+}
+
+.projectRow{
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 4%;
+}
+
+.project{
+    padding-right: 2%;
+    width: 25%;
+}
+
+.projectDescripDiv{
+    margin-top: 15px;
+    border-radius: 5%;
+    background-color: #e3dddd;
+}
+
+.projectDescrip{
+    font-size: 16px;
+    padding: 10px;
+}
+
+/*Vertical Sliding*/
+.slidingVertical{
+    display: inline;
+    text-indent: 8px;
+}
+.slidingVertical span{
+    animation: topToBottom 12.5s linear infinite 0s;
+    -ms-animation: topToBottom 12.5s linear infinite 0s;
+    -webkit-animation: topToBottom 12.5s linear infinite 0s;
+    color: #ffffff;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.slidingVertical span:nth-child(2){
+    animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+    animation-delay: 5s;
+    -ms-animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+    animation-delay: 7.5s;
+    -ms-animation-delay: 7.5s;
+    -webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+    animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -moz-transform: translateY(-50px); }
+    10% { opacity: 1; -moz-transform: translateY(0px); }
+    25% { opacity: 1; -moz-transform: translateY(0px); }
+    30% { opacity: 0; -moz-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -webkit-transform: translateY(-50px); }
+    10% { opacity: 1; -webkit-transform: translateY(0px); }
+    25% { opacity: 1; -webkit-transform: translateY(0px); }
+    30% { opacity: 0; -webkit-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+    0% { opacity: 0; }
+    5% { opacity: 0; -ms-transform: translateY(-50px); }
+    10% { opacity: 1; -ms-transform: translateY(0px); }
+    25% { opacity: 1; -ms-transform: translateY(0px); }
+    30% { opacity: 0; -ms-transform: translateY(50px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
