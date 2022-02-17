@@ -1,6 +1,6 @@
-// window.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-//   }, false)
+window.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  }, false)
 var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
